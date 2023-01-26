@@ -277,7 +277,7 @@ heading-primary:
     border-radius: 11px;
     overflow: hidden;
 
-    transition:transform .3s;
+    transition:transform .3sc;
     
 }
 
@@ -344,28 +344,184 @@ heading-primary:
  /* ---  Diets Section */
 /* *********************************************** */
 
-.list{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-}
-
-.list-icon{
-    color: #e67e22;
-    width: 3rem;
-    height: 3rem;
-    
-}
-
-.list-item{
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-}
 
 .all-recipes{
     text-align: center;
     font-size: 1.8rem;
+}
+
+
+
+/* ******************************************* */
+ /* ---  Testimonials Section */
+/* *********************************************** */
+
+.section-testimonials{
+    
+    background-color: #fdf2e9;
+}
+
+.testimonial-container{
+    padding: 9.6rem 1.8rem;
+}
+
+.textimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+    
+}
+
+
+.testimonial-img{
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: 1.6rem;
+}
+
+.testimonial-name{
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.6rem;
+}
+
+.gallery-item{
+    overflow: hidden;
+}
+
+.gallery-item img{
+    display: block;
+    width: 100%;
+    transition: transform .3s;
+}
+
+.gallery-item img:hover{
+    transform: scale(1.1);
+}
+
+
+/* ******************************************* */
+ /* ---  Pricing Section */
+/* *********************************************** */
+
+
+.section-pricing{
+    padding: 9.6rem 1.8rem;
+}
+.pricing{
+    width: 75%;
+    
+    border-radius: 1.1rem;
+    
+}
+
+.pricing-plan--starter{
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 6.1rem 4.7rem;
+
+}
+.pricing-plan--complete{
+    background-color: #fdf2e9;
+    padding:6.2rem 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after{
+    content: 'Best Value';
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #fcc414;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -18%;
+    top: 6%;
+}
+.plan-header{
+    text-align: center;
+    
+    margin-bottom: 4.8rem;
+}
+
+.plan-name{
+    color: #cf771f;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    margin-bottom: 3.2rem;
+}
+
+.plan-price{
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.plan-price span{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right:0.8rem ;
+}
+
+.plan-text{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+
+.plan-sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+
+
+/* ******************************************* */
+ /* ---  Feacture Section */
+/* *********************************************** */
+
+
+
+.grid-feacture--margin-top{
+    padding-top:9.6rem;
+    padding-bottom: 9.6rem;
+}
+
+.feature-icon{
+    color: #e67e22;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+}
+
+.feature-title{
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.feature-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
