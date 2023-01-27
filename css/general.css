@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+}
+
+*:focus{
+    outline: none;
 }
 
 html{
@@ -53,6 +58,10 @@ body{
     align-items: center;
 }
 
+.grid--5--cols{
+    grid-template-columns: repeat(5,1fr);
+}
+
 /* Heading Component */
 .heading-primary,
 .heading-secondary,
@@ -93,6 +102,7 @@ body{
 
 
 /* button components */
+.btn,
 .btn:link,
 .btn:visited{
     display: inline-block;
@@ -135,6 +145,21 @@ body{
     /* border: inset 3px solid #fff; */
 
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn-form{
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: #2e1907;
+    color: #fae5d3;
+    align-self: end;
+    transition: all .3s;
+}
+
+.btn-form:hover{
+    background-color: #fff;
+    color: #555;
 }
 
 
